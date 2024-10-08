@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-    try {
+
         System.out.println("Enter account data:");
         System.out.print("Number: ");
         int number = sc.nextInt();
@@ -21,6 +21,8 @@ public class Main {
 
         System.out.print("Enter amount for withdraw: ");
         double amount = sc.nextDouble();
+
+    try {
         acc.withdraw(amount);
     }
     catch (DomainExceptions e) {
